@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <div id="qrcode" onclick="hide();"></div>
+    <script src="qrcodejs/qrcode.js"></script>
+    <script src="client.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        
+        function logout(){
+            document.cookie = "username=";
+            document.cookie = "password=";
+            location.reload();
+        }
+        function add_user(){
+            document.getElementById("add_user_main").style = "display: inline-block;";
+        }
+
+
+        function cancell_add_user(){
+            document.getElementById("add_user_main").style = "display: none;";
+        }
+
+    </script>
+
+
+    <div id="main">
+        <input type="text" placeholder="username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <button style="padding: 0px 20px 0px 20px;" onclick="login();" id="button">login</button>
+    </div>
+
+
+
+    <div id="add_user_main">
+        <div>Add New User ...</div><hr>
+        <div>Name : <input type="text" id="name"></div><hr>
+        <div>Traffic(GB) : <input type="number" id="traffic"></div><hr>
+        <div>Time(day) : <input type="number" id="time"></div><hr>
+        <div><button onclick="server_add_user();">Add User</button></div>
+        <div><button onclick="cancell_add_user();">Cancell</button></div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        function delete_user(env){
+
+            if (confirm('delete user ?')) {
+                let logedin_username = getCookie("username");
+                let logedin_password = getCookie("password");
+                let link = env;
+                var delete_user = new WebSocket("ws://156.255.1.217:3000")
+                delete_user.onopen = function(){
+                    delete_user.send("<-delete" + logedin_username + "/*/|" + logedin_password + "/*/|" + link);
+                };
+                delete_user.onmessage = function(evt){
+                    var received_msg = evt.data;
+                    if(received_msg == "user deleted"){
+                        delete_user.close();
+                        location.reload();
+                    }
+                };
+            } else {
+            console.log('cancelled');
+            }
+        }
+
+
+
+
+        function server_add_user(){
+            let logedin_username = getCookie("username");
+            let logedin_password = getCookie("password");
+            var add_user = new WebSocket("ws://156.255.1.217:3000")
+            name_user = document.getElementById("name").value;
+            traffic = document.getElementById("traffic").value;
+            time = document.getElementById("time").value;
+            add_user.onopen = function () {
+                add_user.send("<-login" + logedin_username + "/*/|" + logedin_password + "/*/|" + name_user + "/*/|" + traffic + "/*/|" + time);
+            };
+
+            add_user.onmessage = function (evt) {
+                var received_msg = evt.data;
+                if(received_msg == "successful"){
+                    add_user.close();
+                    document.getElementById("add_user_main").style = "display: none;";
+                    location.reload();
+                }
+            };
+        }
+    </script>
+</body>
+</html>

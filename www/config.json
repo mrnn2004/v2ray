@@ -1,0 +1,3191 @@
+{
+  "log": null,
+  "routing": {
+    "rules": [
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
+      {
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      }
+    ]
+  },
+  "dns": null,
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 62789,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "streamSettings": null,
+      "tag": "api",
+      "sniffing": null
+    },
+    {
+      "listen": null,
+      "port": 56075,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "91ab79d2-1a2c-4fab-efde-acebccf4464d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-56075",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 26439,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "6c2e8a55-1307-49e9-d8ca-e57a287fa418",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-26439",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 24832,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e46b7066-a521-4174-9942-7089c319cfbb",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-24832",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 53855,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "6884cfe5-b2ae-463e-bedd-b97e2a06577d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-53855",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 33947,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "a309240b-2d53-4d74-b510-00f74ded7df1",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-33947",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 22271,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "dae7679d-4ad5-4eb0-b1ac-5fb5872bb1de",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-22271",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 44564,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "59d8891b-445b-4f2c-c651-d9049fa28203",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-44564",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 18535,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "dd9c4cab-b477-4ae1-d332-dea02cb456e4",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-18535",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 45600,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "86a24d60-b1db-43f8-f33e-425302351dff",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-45600",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 24357,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "69a836d2-179a-4df4-e0b8-064dbfdb39c7",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-24357",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 36535,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "0c6c4054-76a5-4c41-f9bc-d0879847e659",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-36535",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 23756,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "c4d58389-c2ff-4ad8-ed96-e61489f6f339",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-23756",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 10000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "ab882f92-d4d3-426e-aa25-98f2e2098546",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-10000",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 34990,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "67e328f3-513e-4531-f326-32f433c0c580",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-34990",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 59105,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4b9c7775-2d94-4500-fd20-b0b076f3f118",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-59105",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 21236,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "679719e9-0f83-4919-cc1e-0f23bca76e6e",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-21236",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 42453,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "98f925b3-0073-4407-89a4-f3072f135774",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-42453",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 23813,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "7850c2e1-1475-4a95-d24f-72052d13d70e",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-23813",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 52931,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "d8ad43fe-4b33-4797-a019-d1837c040f30",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-52931",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 45945,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4d562c02-b8c4-4170-9245-594790af00bd",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-45945",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 39649,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "6daebea0-abdb-4049-f93c-e716703c058d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-39649",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 36004,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "95a2d7b4-a226-4c3a-bebd-1d11643012cd",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-36004",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 22048,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "75c01436-6da8-4e67-a697-d9ed1ebc66bc",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-22048",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 30902,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "a1183fa7-2527-4daa-9826-93506a5920dd",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-30902",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 49353,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5666c1b6-660f-4bc0-bfc8-b8eb4923643b",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-49353",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 33257,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "92ff7952-9842-43db-d9ab-e15b79d07209",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-33257",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 32451,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "006db7af-162f-40ad-c8ce-bf73909337ee",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-32451",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 34228,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5925d98e-da6b-4bd2-d9b9-37bbf60573a3",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-34228",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 10663,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e0701007-d120-4d47-e730-9243fdab576b",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-10663",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 55172,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "185ee39f-a51c-4497-9eb6-b62773fa7b6f",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-55172",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 45721,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b8125774-9401-404c-9f3b-98069615c2d8",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-45721",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 58213,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "7134df62-3f87-426a-d3a6-1eb7bdc64397",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-58213",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 29903,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9c35b7c0-873d-4cf1-8616-ddc1c004c249",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-29903",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 10578,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "feee2f2c-08b2-4f1c-f112-2de895529607",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-10578",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 51133,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "994289cc-9811-4fb6-c17e-f2353e5c28e3",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-51133",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 50492,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "57bc0912-0216-45fe-cbf9-d69fda667164",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-50492",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 47991,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "55a47bc2-15bc-4feb-adb9-93059d2ba463",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-47991",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 46880,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "d63d206a-6439-4bd5-b372-05353872d5a6",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-46880",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 38019,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "84776bc4-2e7f-4a72-ab58-4ceed392483f",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-38019",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 35610,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "7b13534c-211b-40ab-a4fc-e5824eb0fbb1",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-35610",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 33168,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "a9768bf7-dec8-474d-da72-b7a05360bc09",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-33168",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 59494,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "2eae193c-1c9f-4c56-cda6-e6af9dc6139d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-59494",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 26367,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4a6abdfd-eff7-4e62-9f2a-e21dcedb273a",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-26367",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 33823,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "0bc7f401-736d-4b2f-c1d3-46b8c4499c71",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-33823",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 32618,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "639d5187-5809-44d0-bc4a-78cb336accba",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-32618",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 26575,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "a585ed92-6ed5-46e9-c213-ee0952f7e59b",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-26575",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 48505,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b7714275-926b-4ce9-bbce-29570eb2cfd7",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-48505",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 12884,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5557ea0b-4217-4403-90ac-0b5d0da30578",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-12884",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 11432,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "eb51a97c-f64c-474e-cad5-ad13b61c4b86",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-11432",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 18545,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "cc982342-a514-47c7-f6cf-a0580913b42b",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-18545",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 42208,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "c43a0090-43bf-4971-a212-c171b93f34b4",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-42208",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 54878,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "fa2a44be-bfc1-4391-c1c6-a5286e0a25ad",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-54878",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 39810,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "cce59a20-4ff2-4978-82b5-3ebc6c7a896c",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-39810",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 58258,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4fe2fed1-d0d6-4f05-9241-4d28675feab8",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-58258",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 38836,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "39b3c65a-2f01-45e5-bd5b-4e078800a690",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-38836",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 17812,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "3d5fc30a-cc02-4029-89b2-5c32402689fa",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-17812",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16680,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "1aef3b8b-3803-4685-e647-f84377b089a5",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16680",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16338,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e58615a1-3922-46e5-9aad-9345efd75ce9",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16338",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 31956,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "0e6bb172-c2e3-4915-8442-be3455c83e5d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-31956",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 31848,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "79e23600-8342-494f-98ec-61e275502a2c",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-31848",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16287,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b083e7d9-9cce-4292-e7bd-a73d1ee959ad",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16287",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 49326,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4a752815-0349-46f9-976d-7e6c3753be71",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-49326",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 29716,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "88e04305-d771-4ea6-b46f-536871c2a911",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-29716",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16842,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "82e7e0b7-a28c-4a5e-d736-8baf20f06c9a",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16842",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 30452,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "139fede0-0e0d-4577-fcf6-e8adc5c5c5c0",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-30452",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 20849,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "825688c7-fcab-4504-f7f1-25e888a0a8be",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-20849",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 22710,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "26ade9b2-d849-40e0-fda5-7f2f9e28c966",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-22710",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 30945,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "1ca1b8fa-e1b5-4c61-9e33-5cd4771fe6db",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-30945",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 23042,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5f74be3d-7ab4-44ba-84f8-a9879d112a32",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-23042",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 56439,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "dd38b8eb-812b-43ef-baf6-54590a1d708d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-56439",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 58710,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b4eccfde-8b7b-41d0-b76e-d4ab92d716d9",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-58710",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 37115,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5ab60d41-ae0a-41e1-b87e-87eb09172398",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-37115",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 51918,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "15097c05-3bec-4b76-c891-eb97b6d1cdcb",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-51918",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 39047,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "665b641c-d8d3-4d24-fece-3b8bf032e5e1",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-39047",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 59051,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b034ff8c-e68b-4d18-bc26-7fa59858bdd6",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-59051",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 30871,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "f5caa5a8-1ed7-4d2b-ed9d-58687e87a6d3",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-30871",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 54235,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "665f9189-9aca-4998-b12b-a397e065e798",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-54235",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 49932,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "d3a4d9fd-553e-49cb-d854-bcae716069cc",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-49932",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 57848,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9c646a2b-34d5-46ea-9a05-a3c8f3858431",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-57848",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 19937,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "875b9fa5-f336-4042-ab7d-642fb6fe11f4",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-19937",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 50417,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "1a8308db-00f2-490e-e70f-d31d045d6ae4",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-50417",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 27312,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b8f5efee-7fff-4b22-c22c-e237db3312f6",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-27312",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 14836,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "aa159996-7d0f-4e64-8e72-02107467c6c7",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-14836",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 43371,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "cb5a3e2b-97be-4712-af19-30256b66609d",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-43371",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 40396,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "33c8d4a7-cbb7-43fa-da83-758c419b741b",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-40396",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 59560,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "5cbfcdf0-77e5-4956-bb9c-b5d4a73dbf64",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-59560",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 47000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "615938e8-3e83-4a16-ca59-1365725a0ce8",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-47000",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 18805,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "3bd4b72f-2f53-4543-d25d-0783c733f3c8",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-18805",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 34168,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "f143b783-90c3-40c1-f076-8552421c60df",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-34168",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16322,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "c64a32d6-8216-4ab7-b5a7-85c0104f3524",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16322",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 45275,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "aa3e69d2-2cb9-4d6b-9a69-1002dc032211",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-45275",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 39104,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "60a49a09-6b1b-4456-d9a9-3da8f7d10ece",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-39104",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 59542,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9ae502e0-f87c-4151-a2d1-6a83963b8c63",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-59542",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 49591,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "6b902ec1-e701-4654-fa55-7c8b6710e74f",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-49591",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 14034,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "81d5a95e-86d0-4436-d2ca-e0164d94751f",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-14034",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 31886,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "07bef953-db49-47c8-b348-c1c168bc7f0a",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-31886",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 40521,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "61ddf9e9-3711-48f0-eab7-de5344e90fa2",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-40521",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 58048,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "11c4690e-bee9-41d4-f9b9-eb5ffd3ce843",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-58048",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 16852,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b3540583-6420-47b7-c09f-c485887270bf",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-16852",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 26793,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9fe1564e-3341-45a6-d184-a51bdbc86cde",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-26793",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 38740,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "86785835-8e43-4703-8b59-823dae780f26",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-38740",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 11658,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "34633550-87af-4097-c001-b15657bfc825",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-11658",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 17274,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "c7931afe-c3a0-4190-cd32-9f908bf59837",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-17274",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "listen": null,
+      "port": 18122,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "9d8a14ec-b756-4a2b-c2ab-df51f0ef301e",
+            "alterId": 0
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        }
+      },
+      "tag": "inbound-18122",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "transport": null,
+  "policy": {
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true
+    }
+  },
+  "api": {
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "stats": {},
+  "reverse": null,
+  "fakeDns": null
+}
